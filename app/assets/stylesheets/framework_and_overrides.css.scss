@@ -1,0 +1,68 @@
+/*
+  This CSS file is used only for the front-end application
+*/
+
+body {
+  padding-top: 200px;
+  background-image: url('/assets/parchment_bg.jpg');
+}
+
+.navbar-fixed-top {
+  background-image: url('/assets/header.png');
+  height: 200px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.panel-footer, .panel-heading {
+  background-color: #dddddd !important;
+}
+
+code {
+  display: block;
+  padding: 1em;
+  color: #000;
+  background: #eee;
+  margin: 0em 0em 1em 0em;
+  border: 1px solid #ddd;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.panel-heading {
+  font-weight: bold;
+}
+
+.jumbo {
+  font-size: 120px;
+  margin-bottom: 20px;
+}
+
+.letterpress {
+  color: rgba(128,0,0,0.6) !important;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+
+a .glyphicon {
+//  color: #fff;
+}
+
+.shaded {
+  background-color: rgba(0,0,0,0.1) !important;
+}
+
+.shaded:hover {
+  background-color: rgba(0,0,0,0.2) !important;
+}
+
+@import "bootstrap";
+

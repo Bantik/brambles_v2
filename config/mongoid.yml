@@ -1,0 +1,6 @@
+development:
+  sessions:
+    default:
+      database: brambles_v2
+      hosts:
+        - localhost:27017
