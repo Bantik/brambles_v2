@@ -2,14 +2,58 @@
   This CSS file is used only for the front-end application
 */
 
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Ruthie);
+
 body {
-  padding-top: 200px;
-  background-image: url('/assets/parchment_bg.jpg');
+  padding-top: 250px;
+  background: url('/assets/parchment_bg.jpg');
 }
 
-.navbar-fixed-top {
-  background-image: url('/assets/header.png');
-  height: 200px;
+body .container {
+  margin-left: 20px;
+}
+
+.pullquote {
+  font-family: Ruthie, cursive;
+  font-size: 26px;
+  color: #600;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top {
+  background: url('/assets/header_no_text.png') no-repeat;
+  height: 220px;
+  border-bottom: 0px;
+}
+
+.navbar-brand h1 {
+  font-size: 72px;  
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 10px;  
+  text-shadow: 0px 0px 10px rgba(0,0,0,1.0);
+}
+
+.navbar-brand h2 {
+  font-size: 32px;
+  margin-top: -.5em;
+  margin-left: 10px;  
+  color: rgba(0,0,0,0.65);
+}
+
+.navbar-fixed-bottom {
+  background: url('/assets/footer.png') no-repeat;
+  height: 90px;
+  p {
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+}
+
+ul.nav {
+  margin-left: 20px;
+  margin-top: 5px;  
+  text-transform: uppercase;
 }
 
 .align-center {
@@ -48,8 +92,8 @@ em {
 }
 
 .letterpress {
-  color: rgba(128,0,0,0.6) !important;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  color: rgba(64,0,0,0.6) !important;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 }
 
 a .glyphicon {
