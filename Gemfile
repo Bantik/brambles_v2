@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'bson_ext'
-gem 'mongoid', :git => 'git@github.com:mongoid/mongoid.git'
+gem 'mongoid', ">= 4.0.0alpha"
 
 gem 'anjlab-bootstrap-rails', '>= 3.0.0.0', :require => 'bootstrap-rails'
 gem 'devise'
