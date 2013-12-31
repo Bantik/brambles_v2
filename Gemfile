@@ -23,3 +23,5 @@ group :development, :test do
   gem 'rspec-rails', "~> 2.0"
   gem 'unicorn'
 end
+
+gem 'rails_12factor', group: :production
