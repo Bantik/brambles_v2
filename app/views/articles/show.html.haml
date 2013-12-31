@@ -1,2 +1,2 @@
-.col-md-8
-  %h1.letterpress= article.title
+%h1.letterpress= @article.topic_and_title.html_safe
+= @article.content.html_safe

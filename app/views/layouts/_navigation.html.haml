@@ -12,5 +12,5 @@
   .collapse.navbar-collapse
     %ul.nav.navbar-nav
       - @topics.each do |topic|
-        %li= link_to topic.name, topic.slug
+        %li= link_to topic.name, "/#{topic.slug}"
             

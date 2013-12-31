@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   private
 
   def scope_article
-    @article = Article.where(:title => params[:article].humanize.titleize).first
+    @article = Article.by_slug(params[:article])
   end
 
 end

@@ -7,11 +7,21 @@ class Article
   field :summary
   field :content
   field :topic
+  field :slug
 
   belongs_to :topic
-  
-  def self.topics
-    Article.all.only(:topic).map(&:topic).uniq.sort.map(&:titleize)
+  before_save :set_slug
+
+  def self.by_slug(slug)
+    Article.where(:slug => slug).first
+  end
+
+  def set_slug
+    self.slug ||= self.title.gsub(' ','_').gsub('&','and').downcase
+  end
+
+  def topic_and_title
+    "#{topic.name} &mdash; #{self.title}"
   end
 
 end
