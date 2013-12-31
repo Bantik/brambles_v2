@@ -1,0 +1,8 @@
+.col-md-8
+  %h1.letterpress= @topic.name
+  - @articles.each do |article|
+    %h3= article.title
+    %p= article.summary
+
+.col-md-4
+  = image_tag @topic.path_to_image, :class => :topic_woodcut

@@ -8,11 +8,9 @@
         %span.icon-bar
       %a.navbar-brand{:href => '/'}
         %h1 Save Us from the Brambles
-        %h2 A fitful journal of exploration and survival in the wilds of Thornbare
+        %h2.letterpress (a fitful journal of exploration and survival in the wilds of Thornbare)
   .collapse.navbar-collapse
     %ul.nav.navbar-nav
-      %li= link_to 'SSO Authorizations', "#" 
-      %li= link_to 'SSO Authorizations', "#" 
-      %li= link_to 'SSO Authorizations', "#" 
-      %li= link_to 'SSO Authorizations', "#" 
+      - @topics.each do |topic|
+        %li= link_to topic.name, topic.slug
             
