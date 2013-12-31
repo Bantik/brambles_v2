@@ -3,7 +3,7 @@
 
 body {
   padding-top: 200px;
-  background: url('/assets/parchment_bg.jpg');
+  background: image-url('/assets/parchment_bg.jpg');
 }
 
 body .container {
@@ -50,7 +50,7 @@ h3 {
 }
 
 nav.navbar.navbar-default.navbar-fixed-top {
-  background: url('/assets/header_no_text.png') no-repeat;
+  background: image-url('/assets/header_no_text.png') no-repeat;
   height: 220px;
   border-bottom: 0px;
 }
@@ -71,7 +71,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 }
 
 .navbar-fixed-bottom {
-  background: url('/assets/footer.png') no-repeat;
+  background: image-url('/assets/footer.png') no-repeat;
   height: 90px;
   p {
     margin-top: 60px;
