@@ -25,4 +25,5 @@ group :development, :test do
   gem 'unicorn'
 end
 
-#gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
+gem 'rails_serve_static_assets', group: production
